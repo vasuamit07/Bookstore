@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Bookstore.Models.Book>
+
+<h1>Welcome to the Bookstore</h1>
+
+<h2>Available Books</h2>
+<ul>
+    @foreach (var book in Model)
+    {
+        <li>@book.Title by @book.Author - $@book.Price</li>
+    }
+</ul>
